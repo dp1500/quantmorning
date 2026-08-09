@@ -99,24 +99,24 @@ const RangeModel: React.FC<{ data?: RangeModelData }> = ({ data }) => {
           <ReferenceArea y1={data.d5Lower} y2={data.d5Upper} fill="url(#rangeFill)" stroke="none" />
           <ReferenceLine y={data.d5Upper} stroke={overallSignal === 'overbought' ? '#ef4444' : '#a855f7'}
             strokeDasharray="4 4" strokeOpacity={0.5}
-            label={{ value: `D5 High`, position: 'right', fill: overallSignal === 'overbought' ? '#ef4444' : '#a855f7', fontSize: 9 }} />
+            label={{ value: `D5 High ${data.d5Upper?.toLocaleString()}`, position: 'right', fill: overallSignal === 'overbought' ? '#ef4444' : '#a855f7', fontSize: 9 }} />
           <ReferenceLine y={data.d5Lower} stroke={overallSignal === 'oversold' ? '#22c55e' : '#a855f7'}
             strokeDasharray="4 4" strokeOpacity={0.5}
-            label={{ value: `D5 Low`, position: 'right', fill: overallSignal === 'oversold' ? '#22c55e' : '#a855f7', fontSize: 9 }} />
+            label={{ value: `D5 Low ${data.d5Lower?.toLocaleString()}`, position: 'right', fill: overallSignal === 'oversold' ? '#22c55e' : '#a855f7', fontSize: 9 }} />
 
           <Line type="monotone" dataKey="close" stroke={CHART_COLORS.textPrimary}
             strokeWidth={2.5} dot={{ r: 4, fill: CHART_COLORS.bgCard, stroke: CHART_COLORS.textPrimary, strokeWidth: 2 }}
             name="Nifty" connectNulls />
 
-          {/* Per-day overbought markers */}
+          {/* Per-day overbought markers — red ▼ (crossed above) */}
           {overboughtDots.map((d: any, i: number) => (
             <ReferenceDot key={`ob-${i}`} x={d.date} y={d.high} r={5} fill="#ef4444" stroke="#ef4444" strokeWidth={1}
-              label={{ value: '▲', position: 'top', fill: '#ef4444', fontSize: 12, fontWeight: 'bold' }} />
+              label={{ value: '▼', position: 'top', fill: '#ef4444', fontSize: 12, fontWeight: 'bold' }} />
           ))}
-          {/* Per-day oversold markers */}
+          {/* Per-day oversold markers — green ▲ (crossed below) */}
           {oversoldDots.map((d: any, i: number) => (
             <ReferenceDot key={`os-${i}`} x={d.date} y={d.low} r={5} fill="#22c55e" stroke="#22c55e" strokeWidth={1}
-              label={{ value: '▼', position: 'bottom', fill: '#22c55e', fontSize: 12, fontWeight: 'bold' }} />
+              label={{ value: '▲', position: 'bottom', fill: '#22c55e', fontSize: 12, fontWeight: 'bold' }} />
           ))}
         </ComposedChart>
       </ResponsiveContainer>

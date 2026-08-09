@@ -175,6 +175,7 @@ const NiftyRangeIntel: React.FC<{ data?: GarchForecast; oiAnalysis?: any }> = ({
                   <CartesianGrid strokeDasharray="3 3" stroke={CHART_COLORS.border} strokeOpacity={0.15} horizontal={false} />
                   <XAxis type="number" tickFormatter={formatOI} tick={{ fontSize: 9, fill: CHART_COLORS.textTertiary }} tickLine={false} axisLine={false} />
                   <YAxis type="number" dataKey="strike" domain={sharedYDomain as [number, number]}
+                    reversed={true}
                     tickFormatter={(v: number) => (v / 1000).toFixed(1) + 'K'}
                     tick={{ fontSize: 10, fill: CHART_COLORS.textSecondary, fontWeight: 500 }}
                     tickLine={false} axisLine={false} orientation="right" width={45}

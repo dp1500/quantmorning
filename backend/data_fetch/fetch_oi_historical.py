@@ -83,7 +83,7 @@ def fetch_oi_historical(spot_price: float) -> dict:
     to_date = ist_now().strftime("%Y-%m-%d")
     from_date = (ist_now() - timedelta(days=5)).strftime("%Y-%m-%d")
 
-    strike_window = 400  # ±8 strikes of 50 pts each
+    strike_window = 600  # ±12 strikes of 50 pts each
     strike_min = int((spot_price - strike_window) // 50 * 50)
     strike_max = int((spot_price + strike_window) // 50 * 50)
 
