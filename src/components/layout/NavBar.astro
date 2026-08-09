@@ -1,0 +1,26 @@
+---
+import { SITE } from '../../lib/constants';
+---
+<nav class="bg-bg-secondary/80 backdrop-blur-xl border-b border-border-primary sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="text-xl font-bold tracking-tight text-text-primary">{SITE.name}</span>
+      <span class="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium text-text-tertiary bg-bg-tertiary px-2.5 py-1 rounded-full border border-border-primary">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></span>
+        Live
+      </span>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center gap-2 text-xs text-text-tertiary font-mono">
+        <span>NIFTY</span>
+        <span class="w-1 h-1 rounded-full bg-text-disabled"></span>
+        <span>SENSEX</span>
+        <span class="w-1 h-1 rounded-full bg-text-disabled"></span>
+        <span>VIX</span>
+      </div>
+      <span class="text-xs text-text-tertiary font-mono">
+        Powered by Upstox
+      </span>
+    </div>
+  </div>
+</nav>

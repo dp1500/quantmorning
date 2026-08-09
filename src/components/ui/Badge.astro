@@ -1,0 +1,23 @@
+---
+import type { SignalType } from '../../lib/types';
+interface Props {
+  signal: SignalType;
+}
+
+const colors: Record<SignalType, string> = {
+  bullish: 'border-emerald-400/20 text-emerald-400 bg-emerald-400/10',
+  bearish: 'border-red-400/20 text-red-400 bg-red-400/10',
+  neutral: 'border-amber-400/20 text-amber-400 bg-amber-400/10',
+};
+
+const labels: Record<SignalType, string> = {
+  bullish: 'Bullish',
+  bearish: 'Bearish',
+  neutral: 'Neutral',
+};
+
+const { signal } = Astro.props;
+---
+<span class={`inline-flex items-center px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider border rounded-full ${colors[signal]}`}>
+  {labels[signal]}
+</span>

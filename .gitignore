@@ -27,3 +27,4 @@ pnpm-debug.log*
 .myenv/
 myenv/
 
+myenv/Lib

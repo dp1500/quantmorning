@@ -1,0 +1,19 @@
+---
+interface Props {
+  label: string;
+  value: string;
+  sub?: string;
+  trend?: 'up' | 'down' | 'neutral';
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { label, value, sub, trend = 'neutral', size = 'md' } = Astro.props;
+
+const valueSize = { sm: 'text-base', md: 'text-lg', lg: 'text-2xl' }[size];
+const trendColor = { up: 'text-emerald-400', down: 'text-red-400', neutral: 'text-text-secondary' }[trend];
+---
+<div class="flex flex-col gap-1">
+  <span class="text-xs font-medium text-text-tertiary uppercase tracking-wider">{label}</span>
+  <span class={`${valueSize} font-semibold tracking-tight text-text-primary`}>{value}</span>
+  {sub && <span class={`text-xs font-medium ${trendColor}`}>{sub}</span>}
+</div>

@@ -1,0 +1,25 @@
+I have initialized a new astrojs project, use astro docs mcp and tailwind-4-docs & web-design-guidelines skills for creating the website. Also use @DESIGN.md file and keep the website design like vercel.
+
+Name: quantmorning
+Domain: quantmorning.com (not final yet)
+
+Do a complete code architucture and code file and logic designs and ideation of how you will build this website :
+
+A very elgant looking , sharp and concise website that is basically to serve as an pre market quant dashboard of indian stock market + a quantative screener for different stocks and sectors for indian stock market.
+The idea is to show some nifty quant analysis, a garch range forecast visualisation which has last 5 days of nifty movement along with the forecasted range for next 5 days visualised.
+showing simple nifty 3 years chart marking ATH, this year high las 6 mo High and low, last 3 mo high and low last mo high and low. some fantastic quant metrics analysis for nifty like momentum/ volatality analysis. Some OI data anlaysis visualistion like Oi levels for latest expiry and second latest niftyexpiry 
++ change in OI for latest and second latest nifty expiry (in las  24 hours and last 1 hr of the prev day ).  
+It should also show how some commodities and assets haev moved in last 24 hours specially: brent oil, gold , USD/INR , VIX data and their last 1 day, 1 week and 1 month change %
+
+The challenge is to present all of this data in a very elegant and prices yet premium manner and not look very overloaded and clutterd!
+
+the second part of page should be screener sort of thing, where i will show flagged stocks and sectors or quant metrics or any anlaysis based on my quantative + tehnical + propriety ML model analysis.
+so i this will be done for nifty 500 stocks and Sector Indices , Examples include: NIFTY Bank NIFTY Financial Services NIFTY IT NIFTY Auto NIFTY Pharma NIFTY FMCG NIFTY Realty NIFTY Metal NIFTY PSU Bank NIFTY Energy NIFTY Healthcare NIFTY Consumer Durables NIFTY Oil & Gas NIFTY Media NIFTY Infrastructure NIFTY Commodities NIFTY MNC.
+
+The idea is that i willl fech all this data before market open around say 6-7 AM, run my analysis on every asset/ data + do any kind of quant, statistical or ML models inferencing, create the final data to be shown today and then push that data everyday to github from where the github pages can then show the updated data. This can later be changed to some database + domain website server 24/7 but for now the idea is the all data to be fetched locally, analysis run locally and uplaoded to githu b for now maybe later to a database from where it can fetch the final data or analysis for today.
+For now I dont have alot of ideas or models on how i will show stock and sector analysis but keep your designs in such a way that it will be very easy to add new features to this website for ay kind of sector, stock kind of analysis.
+
+Now i have access to UPSTOCKS API, of all these assets, decide which can be fetched from upstocks API and for those that can we cant maybe use Yfinance.
+For now use all your resources in deciding how you will create this project in the most efficient long term best case manner for a very elegant and premium looking site. ideate for designing from code architucture to logic flow of the whole thing to website frontend and how user experience will flow.
+
+when all is decided i wil give you codes i have for garch models and maybe some ideas on what al kidns of other analysis to do whic you cna then implement

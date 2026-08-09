@@ -1,0 +1,11 @@
+# QuantMorning Backend — Python dependencies
+# Python >= 3.11
+
+pandas>=2.0
+numpy>=1.24
+statsmodels>=0.14
+arch>=6.3
+scipy>=1.11
+upstox-python>=2.0
+yfinance>=0.2.36
+python-dotenv>=1.0

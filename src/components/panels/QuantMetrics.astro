@@ -1,0 +1,86 @@
+---
+import type { QuantMetricsData } from '../../lib/types';
+import MetricCard from '../ui/MetricCard.astro';
+import SectionHeader from '../ui/SectionHeader.astro';
+
+const data: QuantMetricsData = await import('../../data/quant_metrics.json').then(m => m.default);
+const { momentum, volatility } = data.nifty;
+---
+
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pt-6">
+  <SectionHeader title="Quantitative Metrics" badge="Nifty 50" />
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+    <!-- Momentum Cluster -->
+    <div class="bg-bg-card border border-border-primary rounded-xl p-4 sm:col-span-2">
+      <h3 class="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-3">Momentum Indicators</h3>
+      <div class="grid grid-cols-2 gap-y-4 gap-x-6">
+        <div class="flex flex-col gap-1">
+          <span class="text-[10px] text-text-tertiary">RSI (14)</span>
+          <div class="flex items-center gap-2">
+            <span class={`text-xl font-bold tracking-tight ${momentum.rsi > 70 ? 'text-red-400' : momentum.rsi < 30 ? 'text-emerald-400' : 'text-text-primary'}`}>
+              {momentum.rsi}
+            </span>
+            <span class="text-[10px] text-text-tertiary">
+              {momentum.rsi > 70 ? 'Overbought' : momentum.rsi < 30 ? 'Oversold' : 'Neutral'}
+            </span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-[10px] text-text-tertiary">MACD (12/26/9)</span>
+          <span class={`text-lg font-semibold font-mono ${momentum.macdHistogram > 0 ? 'text-emerald-400' : 'text-red-400'}`}>
+            {momentum.macd > 0 ? '+' : ''}{momentum.macd}
+          </span>
+          <span class="text-[10px] text-text-tertiary font-mono">
+            Signal {momentum.macdSignal} | Hist {momentum.macdHistogram}
+          </span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-[10px] text-text-tertiary">Stochastic (14/3)</span>
+          <span class={`text-lg font-semibold ${momentum.stochastic > 80 ? 'text-red-400' : momentum.stochastic < 20 ? 'text-emerald-400' : 'text-text-primary'}`}>
+            {momentum.stochastic}
+          </span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-[10px] text-text-tertiary">ROC (12d)</span>
+          <span class={`text-lg font-semibold font-mono ${momentum.roc >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>
+            {momentum.roc >= 0 ? '+' : ''}{momentum.roc}%
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Volatility Cluster -->
+    <div class="bg-bg-card border border-border-primary rounded-xl p-4 sm:col-span-2">
+      <h3 class="text-[11px] font-semibold text-text-tertiary uppercase tracking-wider mb-3">Volatility & Bands</h3>
+      <div class="grid grid-cols-2 gap-y-4 gap-x-6">
+        <div class="flex flex-col gap-1">
+          <span class="text-[10px] text-text-tertiary">Hist. Vol 20d</span>
+          <span class="text-lg font-semibold text-text-primary">{volatility.historicalVol20d}%</span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-[10px] text-text-tertiary">Hist. Vol 50d</span>
+          <span class="text-lg font-semibold text-text-primary">{volatility.historicalVol50d}%</span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-[10px] text-text-tertiary">ATR (14)</span>
+          <span class="text-lg font-semibold font-mono text-text-primary">{volatility.atr14}</span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-[10px] text-text-tertiary">Implied Volatility</span>
+          <span class="text-lg font-semibold text-text-primary">{volatility.impliedVolatility}%</span>
+        </div>
+      </div>
+      <div class="mt-4 pt-3 border-t border-border-primary">
+        <div class="flex items-center justify-between text-[10px] text-text-tertiary">
+          <span>Bollinger Bands (20,2)</span>
+          <div class="flex items-center gap-3 font-mono">
+            <span class="text-red-400">{volatility.bollingerUpper.toLocaleString('en-IN')}</span>
+            <span class="text-text-secondary">{volatility.bollingerMiddle.toLocaleString('en-IN')}</span>
+            <span class="text-emerald-400">{volatility.bollingerLower.toLocaleString('en-IN')}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

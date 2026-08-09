@@ -1,0 +1,36 @@
+# daily-data.yml — QuantMorning Daily Pipeline (GitHub Actions)
+# Runs at 6:00 AM IST (00:30 UTC), Mon-Fri
+
+name: Daily Data Pipeline
+
+on:
+  schedule:
+    - cron: '30 0 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r backend/requirements.txt
+      - run: python backend/main.py
+      - name: Commit updated data
+        run: |
+          git config user.name "quantmorning-bot"
+          git config user.email "bot@quantmorning.com"
+          git add final_data/*.json src/data/*.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "📊 Daily update — $(date +'%Y-%m-%d')"
+            git push
+          fi

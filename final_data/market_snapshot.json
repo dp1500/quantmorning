@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-08-09T00:26:22.386567+05:30",
+  "assets": {
+    "nifty50": {
+      "symbol": "NIFTY 50",
+      "name": "NIFTY 50",
+      "ltp": 24570.65,
+      "prevClose": 24636.0,
+      "change": -65.35,
+      "changePct": -0.27,
+      "dayHigh": 24630.4,
+      "dayLow": 24522.75,
+      "prevHigh": 24630.4,
+      "prevLow": 24522.75,
+      "prevRangePct": 0.44,
+      "ydayDate": "2026-08-07"
+    },
+    "sensex": {
+      "symbol": "SENSEX",
+      "name": "SENSEX",
+      "ltp": 78499.17,
+      "prevClose": 78954.76,
+      "change": -455.59,
+      "changePct": -0.58,
+      "dayHigh": 78757.4,
+      "dayLow": 78377.07,
+      "prevHigh": 78757.4,
+      "prevLow": 78377.07,
+      "prevRangePct": 0.48,
+      "ydayDate": "2026-08-07"
+    },
+    "india_vix": {
+      "symbol": "India VIX",
+      "name": "India VIX",
+      "ltp": 12.16,
+      "prevClose": 12.16,
+      "change": 0.0,
+      "changePct": 0.0,
+      "dayHigh": 12.55,
+      "dayLow": 11.3,
+      "prevHigh": 12.55,
+      "prevLow": 11.3,
+      "prevRangePct": 10.28,
+      "ydayDate": "2026-08-07"
+    },
+    "brentOil": {
+      "symbol": "BZ=F",
+      "name": "Brent Crude",
+      "ltp": 83.55,
+      "prevClose": 82.49,
+      "change": 1.06,
+      "changePct": 1.29,
+      "dayHigh": 84.39,
+      "dayLow": 81.5,
+      "sparkline": [
+        79.45,
+        82.49,
+        83.55
+      ]
+    },
+    "gold": {
+      "symbol": "GC=F",
+      "name": "Gold (COMEX)",
+      "ltp": 4341.0,
+      "prevClose": 4242.0,
+      "change": 99.0,
+      "changePct": 2.33,
+      "dayHigh": 4372.0,
+      "dayLow": 4274.0,
+      "sparkline": [
+        4246.0,
+        4242.0,
+        4341.0
+      ]
+    },
+    "usdInr": {
+      "symbol": "USDINR=X",
+      "name": "USD/INR",
+      "ltp": 95.2,
+      "prevClose": 95.31,
+      "change": -0.11,
+      "changePct": -0.12,
+      "dayHigh": 95.2,
+      "dayLow": 95.2,
+      "sparkline": [
+        95.1,
+        95.08,
+        95.31,
+        95.2
+      ]
+    },
+    "dxy": {
+      "symbol": "DX-Y.NYB",
+      "name": "DXY",
+      "ltp": 99.6,
+      "prevClose": 99.97,
+      "change": -0.37,
+      "changePct": -0.37,
+      "dayHigh": 100.0,
+      "dayLow": 99.4,
+      "sparkline": [
+        99.69,
+        99.97,
+        99.6
+      ]
+    }
+  },
+  "giftNifty": {
+    "symbol": "^NSEI",
+    "name": "GIFT Nifty",
+    "ltp": 24571.0,
+    "prevClose": 24636.0,
+    "change": -65.0,
+    "changePct": -0.27
+  },
+  "asianMarkets": [
+    {
+      "symbol": "^N225",
+      "name": "Nikkei 225",
+      "ltp": 65607.0,
+      "prevClose": 65683.0,
+      "change": -77.0,
+      "changePct": -0.12,
+      "dayHigh": 65991.0,
+      "dayLow": 64651.0,
+      "sparkline": [
+        66300.0,
+        65683.0,
+        65607.0
+      ]
+    },
+    {
+      "symbol": "^KS11",
+      "name": "KOSPI",
+      "ltp": 6259.0,
+      "prevClose": 6296.0,
+      "change": -38.0,
+      "changePct": -0.6,
+      "dayHigh": 6416.0,
+      "dayLow": 6159.0,
+      "sparkline": [
+        6598.0,
+        6296.0,
+        6259.0
+      ]
+    },
+    {
+      "symbol": "^HSI",
+      "name": "Hang Seng",
+      "ltp": 25668.0,
+      "prevClose": 25530.0,
+      "change": 138.0,
+      "changePct": 0.54,
+      "dayHigh": 25670.0,
+      "dayLow": 25393.0,
+      "sparkline": [
+        25916.0,
+        25530.0,
+        25668.0
+      ]
+    }
+  ],
+  "vixRegime": "low"
+}

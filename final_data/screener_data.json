@@ -1,0 +1,680 @@
+{
+  "generatedAt": "2026-08-09T00:27:04+05:30",
+  "stocks": [
+    {
+      "symbol": "LT",
+      "name": "LT",
+      "sector": "NIFTY Oil & Gas",
+      "ltp": 118670.12,
+      "changePct": -2.15,
+      "signal": "bullish",
+      "signalStrength": 83,
+      "metrics": {
+        "momentumScore": 76,
+        "volatilityScore": 15,
+        "mlProbability": 0.89
+      },
+      "tags": [
+        "High Momentum",
+        "Profit Booking",
+        "Breakout",
+        "ML Confidence"
+      ]
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "name": "BHARTIARTL",
+      "sector": "NIFTY Metal",
+      "ltp": 75898.34,
+      "changePct": -2.79,
+      "signal": "bullish",
+      "signalStrength": 74,
+      "metrics": {
+        "momentumScore": 83,
+        "volatilityScore": 28,
+        "mlProbability": 0.66
+      },
+      "tags": [
+        "High Momentum",
+        "Profit Booking",
+        "Breakout"
+      ]
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "name": "KOTAKBANK",
+      "sector": "NIFTY FMCG",
+      "ltp": 39985.89,
+      "changePct": -1.75,
+      "signal": "bullish",
+      "signalStrength": 73,
+      "metrics": {
+        "momentumScore": 59,
+        "volatilityScore": 12,
+        "mlProbability": 0.79
+      },
+      "tags": [
+        "ML Confidence"
+      ]
+    },
+    {
+      "symbol": "TCS",
+      "name": "TCS",
+      "sector": "NIFTY Auto",
+      "ltp": 9450.11,
+      "changePct": -2.14,
+      "signal": "bullish",
+      "signalStrength": 72,
+      "metrics": {
+        "momentumScore": 65,
+        "volatilityScore": 13,
+        "mlProbability": 0.71
+      },
+      "tags": [
+        "Profit Booking",
+        "Breakout"
+      ]
+    },
+    {
+      "symbol": "INFY",
+      "name": "INFY",
+      "sector": "NIFTY MNC",
+      "ltp": 54461.6,
+      "changePct": 0.15,
+      "signal": "bullish",
+      "signalStrength": 71,
+      "metrics": {
+        "momentumScore": 47,
+        "volatilityScore": 13,
+        "mlProbability": 0.88
+      },
+      "tags": [
+        "ML Confidence"
+      ]
+    },
+    {
+      "symbol": "AXISBANK",
+      "name": "AXISBANK",
+      "sector": "NIFTY Metal",
+      "ltp": 26052.65,
+      "changePct": 2.07,
+      "signal": "neutral",
+      "signalStrength": 64,
+      "metrics": {
+        "momentumScore": 72,
+        "volatilityScore": 47,
+        "mlProbability": 0.61
+      },
+      "tags": [
+        "High Momentum",
+        "Volume Spike",
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "name": "BAJFINANCE",
+      "sector": "NIFTY Pharma",
+      "ltp": 97591.19,
+      "changePct": 2.56,
+      "signal": "neutral",
+      "signalStrength": 63,
+      "metrics": {
+        "momentumScore": 65,
+        "volatilityScore": 74,
+        "mlProbability": 0.8
+      },
+      "tags": [
+        "High Volatility",
+        "Volume Spike",
+        "Range Bound",
+        "ML Confidence"
+      ]
+    },
+    {
+      "symbol": "MARUTI",
+      "name": "MARUTI",
+      "sector": "NIFTY Bank",
+      "ltp": 56569.21,
+      "changePct": -2.62,
+      "signal": "neutral",
+      "signalStrength": 58,
+      "metrics": {
+        "momentumScore": 41,
+        "volatilityScore": 32,
+        "mlProbability": 0.71
+      },
+      "tags": [
+        "Profit Booking",
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "SBIN",
+      "name": "SBIN",
+      "sector": "NIFTY PSU Bank",
+      "ltp": 99785.02,
+      "changePct": -2.9,
+      "signal": "neutral",
+      "signalStrength": 56,
+      "metrics": {
+        "momentumScore": 36,
+        "volatilityScore": 26,
+        "mlProbability": 0.68
+      },
+      "tags": [
+        "Profit Booking",
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "RELIANCE",
+      "name": "RELIANCE",
+      "sector": "NIFTY Infrastructure",
+      "ltp": 47550.27,
+      "changePct": 1.39,
+      "signal": "neutral",
+      "signalStrength": 53,
+      "metrics": {
+        "momentumScore": 61,
+        "volatilityScore": 20,
+        "mlProbability": 0.31
+      },
+      "tags": [
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "NTPC",
+      "name": "NTPC",
+      "sector": "NIFTY Financial Services",
+      "ltp": 21867.49,
+      "changePct": 0.75,
+      "signal": "neutral",
+      "signalStrength": 53,
+      "metrics": {
+        "momentumScore": 40,
+        "volatilityScore": 17,
+        "mlProbability": 0.52
+      },
+      "tags": [
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "name": "SUNPHARMA",
+      "sector": "NIFTY Consumer Durables",
+      "ltp": 95432.39,
+      "changePct": -1.24,
+      "signal": "neutral",
+      "signalStrength": 51,
+      "metrics": {
+        "momentumScore": 20,
+        "volatilityScore": 23,
+        "mlProbability": 0.7
+      },
+      "tags": [
+        "Weak Momentum",
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "name": "HINDUNILVR",
+      "sector": "NIFTY Realty",
+      "ltp": 105990.61,
+      "changePct": -1.98,
+      "signal": "neutral",
+      "signalStrength": 50,
+      "metrics": {
+        "momentumScore": 24,
+        "volatilityScore": 76,
+        "mlProbability": 0.88
+      },
+      "tags": [
+        "Weak Momentum",
+        "High Volatility",
+        "Range Bound",
+        "ML Confidence"
+      ]
+    },
+    {
+      "symbol": "HDFCBANK",
+      "name": "HDFCBANK",
+      "sector": "NIFTY Financial Services",
+      "ltp": 115455.23,
+      "changePct": -1.91,
+      "signal": "neutral",
+      "signalStrength": 49,
+      "metrics": {
+        "momentumScore": 32,
+        "volatilityScore": 31,
+        "mlProbability": 0.57
+      },
+      "tags": [
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "TITAN",
+      "name": "TITAN",
+      "sector": "NIFTY IT",
+      "ltp": 79216.55,
+      "changePct": -0.17,
+      "signal": "neutral",
+      "signalStrength": 49,
+      "metrics": {
+        "momentumScore": 28,
+        "volatilityScore": 59,
+        "mlProbability": 0.73
+      },
+      "tags": [
+        "Weak Momentum",
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "name": "ULTRACEMCO",
+      "sector": "NIFTY Infrastructure",
+      "ltp": 75226.61,
+      "changePct": 1.53,
+      "signal": "neutral",
+      "signalStrength": 47,
+      "metrics": {
+        "momentumScore": 36,
+        "volatilityScore": 15,
+        "mlProbability": 0.4
+      },
+      "tags": [
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "ICICIBANK",
+      "name": "ICICIBANK",
+      "sector": "NIFTY Infrastructure",
+      "ltp": 30481.85,
+      "changePct": 0.71,
+      "signal": "neutral",
+      "signalStrength": 44,
+      "metrics": {
+        "momentumScore": 46,
+        "volatilityScore": 78,
+        "mlProbability": 0.53
+      },
+      "tags": [
+        "High Volatility",
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "HCLTECH",
+      "name": "HCLTECH",
+      "sector": "NIFTY Realty",
+      "ltp": 15446.78,
+      "changePct": -0.15,
+      "signal": "neutral",
+      "signalStrength": 44,
+      "metrics": {
+        "momentumScore": 59,
+        "volatilityScore": 58,
+        "mlProbability": 0.3
+      },
+      "tags": [
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "name": "ASIANPAINT",
+      "sector": "NIFTY Media",
+      "ltp": 70032.7,
+      "changePct": -0.04,
+      "signal": "neutral",
+      "signalStrength": 43,
+      "metrics": {
+        "momentumScore": 56,
+        "volatilityScore": 39,
+        "mlProbability": 0.22
+      },
+      "tags": [
+        "Range Bound"
+      ]
+    },
+    {
+      "symbol": "WIPRO",
+      "name": "WIPRO",
+      "sector": "NIFTY Energy",
+      "ltp": 56605.75,
+      "changePct": 2.37,
+      "signal": "neutral",
+      "signalStrength": 40,
+      "metrics": {
+        "momentumScore": 61,
+        "volatilityScore": 74,
+        "mlProbability": 0.26
+      },
+      "tags": [
+        "High Volatility",
+        "Volume Spike",
+        "Range Bound"
+      ]
+    }
+  ],
+  "sectors": [
+    {
+      "index": "LT",
+      "ltp": 118670.12,
+      "changePct": -2.15,
+      "signal": "bullish",
+      "signalStrength": 82,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Momentum",
+        "Pressure"
+      ]
+    },
+    {
+      "index": "BHARTIARTL",
+      "ltp": 75898.34,
+      "changePct": -2.79,
+      "signal": "bullish",
+      "signalStrength": 76,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Momentum",
+        "Pressure"
+      ]
+    },
+    {
+      "index": "TCS",
+      "ltp": 9450.11,
+      "changePct": -2.14,
+      "signal": "bullish",
+      "signalStrength": 71,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Momentum",
+        "Pressure"
+      ]
+    },
+    {
+      "index": "KOTAKBANK",
+      "ltp": 39985.89,
+      "changePct": -1.75,
+      "signal": "bullish",
+      "signalStrength": 71,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Momentum",
+        "Pressure"
+      ]
+    },
+    {
+      "index": "INFY",
+      "ltp": 54461.6,
+      "changePct": 0.15,
+      "signal": "bullish",
+      "signalStrength": 67,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Momentum"
+      ]
+    },
+    {
+      "index": "AXISBANK",
+      "ltp": 26052.65,
+      "changePct": 2.07,
+      "signal": "neutral",
+      "signalStrength": 65,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed",
+        "Breakout"
+      ]
+    },
+    {
+      "index": "BAJFINANCE",
+      "ltp": 97591.19,
+      "changePct": 2.56,
+      "signal": "neutral",
+      "signalStrength": 62,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed",
+        "Breakout"
+      ]
+    },
+    {
+      "index": "RELIANCE",
+      "ltp": 47550.27,
+      "changePct": 1.39,
+      "signal": "neutral",
+      "signalStrength": 56,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed"
+      ]
+    },
+    {
+      "index": "MARUTI",
+      "ltp": 56569.21,
+      "changePct": -2.62,
+      "signal": "neutral",
+      "signalStrength": 55,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed",
+        "Pressure"
+      ]
+    },
+    {
+      "index": "SBIN",
+      "ltp": 99785.02,
+      "changePct": -2.9,
+      "signal": "neutral",
+      "signalStrength": 53,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed",
+        "Pressure"
+      ]
+    },
+    {
+      "index": "NTPC",
+      "ltp": 21867.49,
+      "changePct": 0.75,
+      "signal": "neutral",
+      "signalStrength": 52,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed"
+      ]
+    },
+    {
+      "index": "HDFCBANK",
+      "ltp": 115455.23,
+      "changePct": -1.91,
+      "signal": "neutral",
+      "signalStrength": 47,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed",
+        "Pressure"
+      ]
+    },
+    {
+      "index": "ASIANPAINT",
+      "ltp": 70032.7,
+      "changePct": -0.04,
+      "signal": "neutral",
+      "signalStrength": 47,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed"
+      ]
+    },
+    {
+      "index": "HCLTECH",
+      "ltp": 15446.78,
+      "changePct": -0.15,
+      "signal": "neutral",
+      "signalStrength": 47,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed"
+      ]
+    },
+    {
+      "index": "ULTRACEMCO",
+      "ltp": 75226.61,
+      "changePct": 1.53,
+      "signal": "neutral",
+      "signalStrength": 47,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed",
+        "Breakout"
+      ]
+    },
+    {
+      "index": "SUNPHARMA",
+      "ltp": 95432.39,
+      "changePct": -1.24,
+      "signal": "neutral",
+      "signalStrength": 46,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed"
+      ]
+    },
+    {
+      "index": "WIPRO",
+      "ltp": 56605.75,
+      "changePct": 2.37,
+      "signal": "neutral",
+      "signalStrength": 44,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed",
+        "Breakout"
+      ]
+    },
+    {
+      "index": "TITAN",
+      "ltp": 79216.55,
+      "changePct": -0.17,
+      "signal": "neutral",
+      "signalStrength": 44,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed"
+      ]
+    },
+    {
+      "index": "ICICIBANK",
+      "ltp": 30481.85,
+      "changePct": 0.71,
+      "signal": "neutral",
+      "signalStrength": 43,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed"
+      ]
+    },
+    {
+      "index": "HINDUNILVR",
+      "ltp": 105990.61,
+      "changePct": -1.98,
+      "signal": "neutral",
+      "signalStrength": 43,
+      "topContributors": [
+        "—",
+        "—",
+        "—"
+      ],
+      "tags": [
+        "Mixed",
+        "Pressure"
+      ]
+    }
+  ]
+}

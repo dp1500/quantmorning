@@ -1,0 +1,21 @@
+{
+  "nifty": {
+    "momentum": {
+      "rsi": 59.5,
+      "macd": 163.8,
+      "macdSignal": 117.3,
+      "macdHistogram": 46.4,
+      "stochastic": 82.6,
+      "roc": 2.4
+    },
+    "volatility": {
+      "historicalVol20d": 10.1,
+      "historicalVol50d": 11.9,
+      "atr14": 201.6,
+      "bollingerUpper": 24812.2,
+      "bollingerLower": 23683.9,
+      "bollingerMiddle": 24248.0,
+      "impliedVolatility": 11.6
+    }
+  }
+}

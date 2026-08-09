@@ -1,11 +1,44 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/layout/NavBar.astro';
+import MarketSnapshot from '../components/panels/MarketSnapshot.astro';
+import NiftyChart from '../components/panels/NiftyChart';
+import NiftyRangeIntel from '../components/panels/NiftyRangeIntel';
+import QuantMetrics from '../components/panels/QuantMetrics.astro';
+import Screener from '../components/panels/Screener';
+import type { NiftyChartData, GarchForecast } from '../lib/types';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const chartData: NiftyChartData = await import('../data/nifty_chart_data.json').then(m => m.default);
+const forecastData: GarchForecast = await import('../data/garch_forecast.json').then(m => m.default);
+const oiAnalysis: any = await import('../data/oi_analysis.json').then(m => m.default);
 ---
-
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+  <NavBar />
+  <main class="pb-12">
+    <MarketSnapshot />
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-6">
+      <div class="grid grid-cols-1 gap-6">
+        <NiftyChart data={chartData} client:visible />
+        <NiftyRangeIntel data={forecastData} oiAnalysis={oiAnalysis} client:visible />
+      </div>
+    </div>
+    <QuantMetrics />
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-6">
+      <Screener client:load />
+    </div>
+  </main>
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 py-8 border-t border-border-primary">
+    <div class="flex items-center justify-between text-[10px] text-text-tertiary">
+      <div class="flex items-center gap-4">
+        <span>QuantMorning © {new Date().getFullYear()}</span>
+        <span class="text-text-disabled">|</span>
+        <span>Powered by Upstox API</span>
+      </div>
+      <div class="flex items-center gap-3 font-mono">
+        <span>SSM Kalman + GARCH(2,1)</span>
+        <span class="text-text-disabled">|</span>
+        <span>Nifty 500 Screener</span>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>
