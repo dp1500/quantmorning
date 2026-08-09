@@ -4,6 +4,7 @@ import NavBar from '../components/layout/NavBar.astro';
 import MarketSnapshot from '../components/panels/MarketSnapshot.astro';
 import NiftyChart from '../components/panels/NiftyChart';
 import NiftyRangeIntel from '../components/panels/NiftyRangeIntel';
+import RangeModel from '../components/panels/RangeModel';
 import QuantMetrics from '../components/panels/QuantMetrics.astro';
 import Screener from '../components/panels/Screener';
 import type { NiftyChartData, GarchForecast } from '../lib/types';
@@ -20,6 +21,7 @@ const oiAnalysis: any = await import('../data/oi_analysis.json').then(m => m.def
       <div class="grid grid-cols-1 gap-6">
         <NiftyChart data={chartData} client:visible />
         <NiftyRangeIntel data={forecastData} oiAnalysis={oiAnalysis} client:visible />
+        {forecastData.rangeModel && <RangeModel data={forecastData.rangeModel} client:visible />}
       </div>
     </div>
     <QuantMetrics />

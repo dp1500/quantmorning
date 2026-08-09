@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T00:26:22.386567+05:30",
+  "timestamp": "2026-08-09T14:58:27.760109+05:30",
   "assets": {
     "nifty50": {
       "symbol": "NIFTY 50",
@@ -53,7 +53,6 @@
       "dayHigh": 84.39,
       "dayLow": 81.5,
       "sparkline": [
-        79.45,
         82.49,
         83.55
       ]
@@ -61,16 +60,15 @@
     "gold": {
       "symbol": "GC=F",
       "name": "Gold (COMEX)",
-      "ltp": 4341.0,
+      "ltp": 4400.0,
       "prevClose": 4242.0,
-      "change": 99.0,
-      "changePct": 2.33,
-      "dayHigh": 4372.0,
-      "dayLow": 4274.0,
+      "change": 158.0,
+      "changePct": 3.72,
+      "dayHigh": 4432.0,
+      "dayLow": 4288.0,
       "sparkline": [
-        4246.0,
         4242.0,
-        4341.0
+        4400.0
       ]
     },
     "usdInr": {
@@ -99,7 +97,6 @@
       "dayHigh": 100.0,
       "dayLow": 99.4,
       "sparkline": [
-        99.69,
         99.97,
         99.6
       ]

@@ -4,6 +4,13 @@
       "expiryDate": "2026-08-11",
       "strikes": [
         {
+          "strike": 24150,
+          "callOI": 53040,
+          "putOI": 2560155,
+          "callChange": 0,
+          "putChange": 120835
+        },
+        {
           "strike": 24200,
           "callOI": 954395,
           "putOI": 6513455,
@@ -107,16 +114,30 @@
           "putOI": 327145,
           "callChange": -66170,
           "putChange": -4095
+        },
+        {
+          "strike": 24950,
+          "callOI": 3437330,
+          "putOI": 66040,
+          "callChange": -60580,
+          "putChange": -1755
         }
       ],
-      "totalCallOI": 65475930,
-      "totalPutOI": 50783135,
-      "pcr": 0.78,
+      "totalCallOI": 68966300,
+      "totalPutOI": 53409330,
+      "pcr": 0.77,
       "daysToExpiry": 1
     },
     {
       "expiryDate": "2026-08-18",
       "strikes": [
+        {
+          "strike": 24150,
+          "callOI": 8190,
+          "putOI": 169455,
+          "callChange": 0,
+          "putChange": 10530
+        },
         {
           "strike": 24200,
           "callOI": 95810,
@@ -221,14 +242,21 @@
           "putOI": 73190,
           "callChange": 18200,
           "putChange": 1430
+        },
+        {
+          "strike": 24950,
+          "callOI": 254735,
+          "putOI": 14690,
+          "callChange": 260,
+          "putChange": -65
         }
       ],
-      "totalCallOI": 7238985,
-      "totalPutOI": 6963775,
-      "pcr": 0.96,
+      "totalCallOI": 7501910,
+      "totalPutOI": 7147920,
+      "pcr": 0.95,
       "daysToExpiry": 8
     }
   ],
   "spotPrice": 24570.65,
-  "updatedAt": "2026-08-09T00:27:01.217534+05:30"
+  "updatedAt": "2026-08-09T14:59:10.145612+05:30"
 }

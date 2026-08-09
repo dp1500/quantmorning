@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-09T00:27:04+05:30",
+  "lastUpdated": "2026-08-09T14:59:10+05:30",
   "model": "SSM Kalman + GARCH(2,1)",
   "modelDesc": "Local-level Kalman filter (150d) with AR(1) drift + GJR-GARCH residuals; GARCH(2,1) on Student-t for comparison",
   "last5Days": [
@@ -97,8 +97,15 @@
     "expiryDate": "2026-08-11",
     "daysLeft": 1,
     "maxPain": 24600,
-    "pcr": 0.78,
+    "pcr": 0.77,
     "strikes": [
+      {
+        "strike": 24150,
+        "callOI": 53040,
+        "putOI": 2560155,
+        "callChange": 0,
+        "putChange": 120835
+      },
       {
         "strike": 24200,
         "callOI": 954395,
@@ -203,7 +210,60 @@
         "putOI": 327145,
         "callChange": -66170,
         "putChange": -4095
+      },
+      {
+        "strike": 24950,
+        "callOI": 3437330,
+        "putOI": 66040,
+        "callChange": -60580,
+        "putChange": -1755
       }
     ]
+  },
+  "rangeModel": {
+    "forecastDate": "2026-07-31",
+    "forecastPrice": 24383.6,
+    "d5Date": "2026-08-07",
+    "d5Upper": 24754.0,
+    "d5Lower": 24122.0,
+    "d5Median": 24436.0,
+    "actualDays": [
+      {
+        "date": "2026-08-03",
+        "open": 24572.7,
+        "high": 24774.3,
+        "low": 24515.15,
+        "close": 24774.3
+      },
+      {
+        "date": "2026-08-04",
+        "open": 24703.9,
+        "high": 24703.9,
+        "low": 24427.95,
+        "close": 24614.9
+      },
+      {
+        "date": "2026-08-05",
+        "open": 24669.2,
+        "high": 24677.6,
+        "low": 24497.95,
+        "close": 24624.65
+      },
+      {
+        "date": "2026-08-06",
+        "open": 24641.0,
+        "high": 24677.05,
+        "low": 24604.15,
+        "close": 24636.0
+      },
+      {
+        "date": "2026-08-07",
+        "open": 24538.9,
+        "high": 24630.4,
+        "low": 24522.75,
+        "close": 24570.65
+      }
+    ],
+    "signal": "overbought"
   }
 }

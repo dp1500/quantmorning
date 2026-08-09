@@ -41,7 +41,7 @@ from data_fetch.fetch_commodities import fetch_all_commodities, fetch_gift_nifty
 from data_fetch.fetch_oi_historical import fetch_oi_historical
 
 # Analysis
-from analysis.forecast import compute_forecast
+from analysis.forecast import compute_forecast, compute_range_model
 from analysis.momentum import compute_momentum
 from analysis.volatility import compute_volatility
 from analysis.screener import run_screener
@@ -148,6 +148,12 @@ def main():
     # =============================================
 
     forecast_json = compute_forecast(nifty_df, oi_levels=oi_compact)
+
+    # Attach proprietary range model
+    range_model = compute_range_model(nifty_df)
+    if range_model:
+        forecast_json["rangeModel"] = range_model
+
     write_json_dual(forecast_json, FINAL_DATA_DIR, FRONTEND_DATA_DIR, "garch_forecast.json")
 
     # =============================================

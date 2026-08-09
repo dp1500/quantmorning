@@ -245,6 +245,86 @@ def _forecast_garch(df: pd.DataFrame) -> tuple:
     return pd.DataFrame(rows), last_date, last_price
 
 
+def compute_range_model(df: pd.DataFrame) -> dict | None:
+    """
+    Proprietary range model: GARCH forecast from 5 days ago.
+    Compares actual Nifty movement against the 5th-day forecast range.
+    """
+    print("\n📏 Computing range model (GARCH from 5 days ago)...")
+    if df is None or len(df) < GARCH_WINDOW + 5:
+        return None
+
+    # Truncate data to 5 business days before end
+    cutoff_idx = len(df) - 5
+    train_df = df.iloc[:cutoff_idx].copy()
+    # Compute log returns on the truncated data
+    train_df["log_return"] = np.log(train_df["close"] / train_df["close"].shift(1))
+    train_df = train_df.dropna(subset=["log_return"])
+
+    actual_df = df.iloc[cutoff_idx:].copy()  # last 5 actual days
+
+    # Run GARCH on truncated data
+    garch_fc, train_last_date, train_last_price = _forecast_garch(train_df)
+
+    if garch_fc.empty or len(garch_fc) < 5:
+        return None
+
+    # Day 5 forecast range
+    d5 = garch_fc.iloc[4]
+    d5_upper = float(d5["Upper"])
+    d5_lower = float(d5["Lower"])
+    d5_median = float(d5["Median"])
+    d5_date = str(d5.get("Date", ""))[:10]
+
+    # Last 5 actual days
+    actual_days = []
+    for _, row in actual_df.iterrows():
+        actual_days.append({
+            "date": str(row["date"])[:10],
+            "open": round(float(row["open"]), 2),
+            "high": round(float(row["high"]), 2),
+            "low": round(float(row["low"]), 2),
+            "close": round(float(row["close"]), 2),
+        })
+
+    # Check for overbought/oversold crossings
+    overbought = False
+    oversold = False
+    for d in actual_days:
+        if d["high"] > d5_upper:
+            overbought = True
+        if d["low"] < d5_lower:
+            oversold = True
+
+    signal = "neutral"
+    if overbought and not oversold:
+        signal = "overbought"
+    elif oversold and not overbought:
+        signal = "oversold"
+    elif overbought and oversold:
+        signal = "volatile"
+
+    result = {
+        "forecastDate": str(train_last_date)[:10],
+        "forecastPrice": round(train_last_price, 2),
+        "d5Date": d5_date,
+        "d5Upper": round(d5_upper, 0),
+        "d5Lower": round(d5_lower, 0),
+        "d5Median": round(d5_median, 0),
+        "actualDays": actual_days,
+        "signal": signal,
+    }
+
+    print(f"  ✓ Range model: {signal.upper()} | D5 forecast: {d5_lower:.0f} – {d5_upper:.0f} | "
+          f"Actual range: {actual_days[0]['date']} → {actual_days[-1]['date']}")
+    if overbought:
+        print(f"  ⚠️  OVERBOUGHT: Nifty crossed above {d5_upper:.0f}")
+    if oversold:
+        print(f"  ⚠️  OVERSOLD: Nifty crossed below {d5_lower:.0f}")
+
+    return result
+
+
 def _empty_forecast() -> dict:
     return {
         "lastUpdated": ist_now().strftime("%Y-%m-%dT%H:%M:%S+05:30"),

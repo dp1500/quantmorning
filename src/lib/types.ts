@@ -124,6 +124,7 @@ export interface GarchForecast {
   ssmAnnualVol: number;
   garchAnnualVol: number;
   oiLevels?: OILevelsCompact;
+  rangeModel?: Record<string, any>;
 }
 
 export interface MomentumMetrics {
