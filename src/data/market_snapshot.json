@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-09T14:58:27.760109+05:30",
+  "timestamp": "2026-08-10T08:28:27.244826+05:30",
   "assets": {
     "nifty50": {
       "symbol": "NIFTY 50",
@@ -46,29 +46,31 @@
     "brentOil": {
       "symbol": "BZ=F",
       "name": "Brent Crude",
-      "ltp": 83.55,
-      "prevClose": 82.49,
-      "change": 1.06,
-      "changePct": 1.29,
-      "dayHigh": 84.39,
-      "dayLow": 81.5,
+      "ltp": 84.25,
+      "prevClose": 83.55,
+      "change": 0.7,
+      "changePct": 0.84,
+      "dayHigh": 84.93,
+      "dayLow": 83.56,
       "sparkline": [
         82.49,
-        83.55
+        83.55,
+        84.25
       ]
     },
     "gold": {
       "symbol": "GC=F",
       "name": "Gold (COMEX)",
-      "ltp": 4400.0,
-      "prevClose": 4242.0,
-      "change": 158.0,
-      "changePct": 3.72,
-      "dayHigh": 4432.0,
-      "dayLow": 4288.0,
+      "ltp": 4384.0,
+      "prevClose": 4341.0,
+      "change": 43.0,
+      "changePct": 0.99,
+      "dayHigh": 4412.0,
+      "dayLow": 4374.0,
       "sparkline": [
         4242.0,
-        4400.0
+        4341.0,
+        4384.0
       ]
     },
     "usdInr": {
@@ -81,7 +83,6 @@
       "dayHigh": 95.2,
       "dayLow": 95.2,
       "sparkline": [
-        95.1,
         95.08,
         95.31,
         95.2
@@ -90,15 +91,16 @@
     "dxy": {
       "symbol": "DX-Y.NYB",
       "name": "DXY",
-      "ltp": 99.6,
-      "prevClose": 99.97,
-      "change": -0.37,
-      "changePct": -0.37,
-      "dayHigh": 100.0,
-      "dayLow": 99.4,
+      "ltp": 99.7,
+      "prevClose": 99.6,
+      "change": 0.1,
+      "changePct": 0.1,
+      "dayHigh": 99.7,
+      "dayLow": 99.58,
       "sparkline": [
         99.97,
-        99.6
+        99.6,
+        99.7
       ]
     }
   },
@@ -114,46 +116,46 @@
     {
       "symbol": "^N225",
       "name": "Nikkei 225",
-      "ltp": 65607.0,
-      "prevClose": 65683.0,
-      "change": -77.0,
-      "changePct": -0.12,
-      "dayHigh": 65991.0,
-      "dayLow": 64651.0,
+      "ltp": 66931.0,
+      "prevClose": 65607.0,
+      "change": 1325.0,
+      "changePct": 2.02,
+      "dayHigh": 67007.0,
+      "dayLow": 65849.0,
       "sparkline": [
-        66300.0,
         65683.0,
-        65607.0
+        65607.0,
+        66931.0
       ]
     },
     {
       "symbol": "^KS11",
       "name": "KOSPI",
-      "ltp": 6259.0,
-      "prevClose": 6296.0,
-      "change": -38.0,
-      "changePct": -0.6,
-      "dayHigh": 6416.0,
-      "dayLow": 6159.0,
+      "ltp": 6285.0,
+      "prevClose": 6259.0,
+      "change": 27.0,
+      "changePct": 0.43,
+      "dayHigh": 6394.0,
+      "dayLow": 6265.0,
       "sparkline": [
-        6598.0,
         6296.0,
-        6259.0
+        6259.0,
+        6285.0
       ]
     },
     {
       "symbol": "^HSI",
       "name": "Hang Seng",
-      "ltp": 25668.0,
-      "prevClose": 25530.0,
-      "change": 138.0,
-      "changePct": 0.54,
-      "dayHigh": 25670.0,
-      "dayLow": 25393.0,
+      "ltp": 25855.0,
+      "prevClose": 25668.0,
+      "change": 186.0,
+      "changePct": 0.72,
+      "dayHigh": 25900.0,
+      "dayLow": 25720.0,
       "sparkline": [
-        25916.0,
         25530.0,
-        25668.0
+        25668.0,
+        25855.0
       ]
     }
   ],
