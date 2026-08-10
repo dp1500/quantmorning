@@ -1,5 +1,374 @@
 {
-  "expiries": [],
+  "expiries": [
+    {
+      "expiryDate": "2026-08-11",
+      "strikes": [
+        {
+          "strike": 23950,
+          "callOI": 27820,
+          "putOI": 1488760,
+          "callChange": -65,
+          "putChange": 79560
+        },
+        {
+          "strike": 24000,
+          "callOI": 650520,
+          "putOI": 10350795,
+          "callChange": -2145,
+          "putChange": -162760
+        },
+        {
+          "strike": 24050,
+          "callOI": 44525,
+          "putOI": 1926600,
+          "callChange": 0,
+          "putChange": -15275
+        },
+        {
+          "strike": 24100,
+          "callOI": 343330,
+          "putOI": 4782765,
+          "callChange": 910,
+          "putChange": -24115
+        },
+        {
+          "strike": 24150,
+          "callOI": 53040,
+          "putOI": 2560155,
+          "callChange": 0,
+          "putChange": 120835
+        },
+        {
+          "strike": 24200,
+          "callOI": 954395,
+          "putOI": 6513455,
+          "callChange": 130,
+          "putChange": -159640
+        },
+        {
+          "strike": 24250,
+          "callOI": 130195,
+          "putOI": 2561845,
+          "callChange": -6825,
+          "putChange": -143195
+        },
+        {
+          "strike": 24300,
+          "callOI": 858845,
+          "putOI": 6186505,
+          "callChange": -975,
+          "putChange": 91000
+        },
+        {
+          "strike": 24350,
+          "callOI": 358540,
+          "putOI": 2236065,
+          "callChange": 17485,
+          "putChange": -105235
+        },
+        {
+          "strike": 24400,
+          "callOI": 1353430,
+          "putOI": 5546710,
+          "callChange": -22230,
+          "putChange": -305110
+        },
+        {
+          "strike": 24450,
+          "callOI": 531050,
+          "putOI": 2406950,
+          "callChange": -94445,
+          "putChange": -448760
+        },
+        {
+          "strike": 24500,
+          "callOI": 3932175,
+          "putOI": 7437300,
+          "callChange": -590330,
+          "putChange": -1107990
+        },
+        {
+          "strike": 24550,
+          "callOI": 3871205,
+          "putOI": 3528980,
+          "callChange": -413855,
+          "putChange": -1091740
+        },
+        {
+          "strike": 24600,
+          "callOI": 12354030,
+          "putOI": 7978035,
+          "callChange": -1151735,
+          "putChange": -1036360
+        },
+        {
+          "strike": 24650,
+          "callOI": 6157385,
+          "putOI": 1993680,
+          "callChange": -844740,
+          "putChange": -219700
+        },
+        {
+          "strike": 24700,
+          "callOI": 10355930,
+          "putOI": 2421380,
+          "callChange": -984360,
+          "putChange": -224965
+        },
+        {
+          "strike": 24750,
+          "callOI": 4109950,
+          "putOI": 432965,
+          "callChange": -266370,
+          "putChange": -27885
+        },
+        {
+          "strike": 24800,
+          "callOI": 9555520,
+          "putOI": 993460,
+          "callChange": -479765,
+          "putChange": -9880
+        },
+        {
+          "strike": 24850,
+          "callOI": 3243045,
+          "putOI": 218660,
+          "callChange": -86515,
+          "putChange": -5200
+        },
+        {
+          "strike": 24900,
+          "callOI": 7710235,
+          "putOI": 327145,
+          "callChange": -66170,
+          "putChange": -4095
+        },
+        {
+          "strike": 24950,
+          "callOI": 3437330,
+          "putOI": 66040,
+          "callChange": -60580,
+          "putChange": -1755
+        },
+        {
+          "strike": 25000,
+          "callOI": 11582155,
+          "putOI": 622440,
+          "callChange": 3965,
+          "putChange": -10465
+        },
+        {
+          "strike": 25050,
+          "callOI": 3705845,
+          "putOI": 45305,
+          "callChange": 95160,
+          "putChange": 260
+        },
+        {
+          "strike": 25100,
+          "callOI": 7846540,
+          "putOI": 74360,
+          "callChange": -19045,
+          "putChange": -260
+        },
+        {
+          "strike": 25150,
+          "callOI": 2698020,
+          "putOI": 20735,
+          "callChange": 99840,
+          "putChange": -195
+        }
+      ],
+      "totalCallOI": 95865055,
+      "totalPutOI": 72721090,
+      "pcr": 0.76,
+      "daysToExpiry": 0
+    },
+    {
+      "expiryDate": "2026-08-18",
+      "strikes": [
+        {
+          "strike": 23950,
+          "callOI": 1950,
+          "putOI": 203320,
+          "callChange": 65,
+          "putChange": 3770
+        },
+        {
+          "strike": 24000,
+          "callOI": 111670,
+          "putOI": 1833065,
+          "callChange": 650,
+          "putChange": 28665
+        },
+        {
+          "strike": 24050,
+          "callOI": 3185,
+          "putOI": 136370,
+          "callChange": 0,
+          "putChange": -16315
+        },
+        {
+          "strike": 24100,
+          "callOI": 84630,
+          "putOI": 851110,
+          "callChange": 130,
+          "putChange": 8515
+        },
+        {
+          "strike": 24150,
+          "callOI": 8190,
+          "putOI": 169455,
+          "callChange": 0,
+          "putChange": 10530
+        },
+        {
+          "strike": 24200,
+          "callOI": 95810,
+          "putOI": 741390,
+          "callChange": 390,
+          "putChange": 9230
+        },
+        {
+          "strike": 24250,
+          "callOI": 32045,
+          "putOI": 177385,
+          "callChange": -455,
+          "putChange": -195
+        },
+        {
+          "strike": 24300,
+          "callOI": 200460,
+          "putOI": 1359085,
+          "callChange": 65,
+          "putChange": -6825
+        },
+        {
+          "strike": 24350,
+          "callOI": 29185,
+          "putOI": 212810,
+          "callChange": -520,
+          "putChange": -845
+        },
+        {
+          "strike": 24400,
+          "callOI": 423605,
+          "putOI": 844285,
+          "callChange": 7475,
+          "putChange": -15080
+        },
+        {
+          "strike": 24450,
+          "callOI": 75790,
+          "putOI": 276185,
+          "callChange": -1950,
+          "putChange": -18200
+        },
+        {
+          "strike": 24500,
+          "callOI": 900315,
+          "putOI": 1091350,
+          "callChange": -24635,
+          "putChange": -4615
+        },
+        {
+          "strike": 24550,
+          "callOI": 362895,
+          "putOI": 212420,
+          "callChange": -15470,
+          "putChange": -10075
+        },
+        {
+          "strike": 24600,
+          "callOI": 1113840,
+          "putOI": 1049750,
+          "callChange": -50635,
+          "putChange": -18850
+        },
+        {
+          "strike": 24650,
+          "callOI": 484250,
+          "putOI": 205140,
+          "callChange": -7605,
+          "putChange": -325
+        },
+        {
+          "strike": 24700,
+          "callOI": 1243515,
+          "putOI": 487175,
+          "callChange": -29185,
+          "putChange": -2210
+        },
+        {
+          "strike": 24750,
+          "callOI": 272545,
+          "putOI": 60775,
+          "callChange": -325,
+          "putChange": -1170
+        },
+        {
+          "strike": 24800,
+          "callOI": 827580,
+          "putOI": 157495,
+          "callChange": -26975,
+          "putChange": -1495
+        },
+        {
+          "strike": 24850,
+          "callOI": 249925,
+          "putOI": 15340,
+          "callChange": -15210,
+          "putChange": -910
+        },
+        {
+          "strike": 24900,
+          "callOI": 927225,
+          "putOI": 73190,
+          "callChange": 18200,
+          "putChange": 1430
+        },
+        {
+          "strike": 24950,
+          "callOI": 254735,
+          "putOI": 14690,
+          "callChange": 260,
+          "putChange": -65
+        },
+        {
+          "strike": 25000,
+          "callOI": 2905370,
+          "putOI": 220350,
+          "callChange": 2535,
+          "putChange": 1300
+        },
+        {
+          "strike": 25050,
+          "callOI": 187655,
+          "putOI": 2665,
+          "callChange": -24960,
+          "putChange": -65
+        },
+        {
+          "strike": 25100,
+          "callOI": 916825,
+          "putOI": 7865,
+          "callChange": -20280,
+          "putChange": 0
+        },
+        {
+          "strike": 25150,
+          "callOI": 174980,
+          "putOI": 2015,
+          "callChange": 18980,
+          "putChange": 0
+        }
+      ],
+      "totalCallOI": 11888175,
+      "totalPutOI": 10404680,
+      "pcr": 0.88,
+      "daysToExpiry": 7
+    }
+  ],
   "spotPrice": 24570.65,
-  "updatedAt": "2026-08-10T08:28:28.017182+05:30"
+  "updatedAt": "2026-08-10T08:41:06.593122+05:30"
 }
