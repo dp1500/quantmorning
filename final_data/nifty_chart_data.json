@@ -1,8 +1,8 @@
 {
   "ath": 26328.55,
-  "athDate": "2025-03-11",
+  "athDate": "2025-03-12",
   "thisYearHigh": 26328.55,
-  "thisYearHighDate": "2026-03-06",
+  "thisYearHighDate": "2026-03-10",
   "sixMonthHigh": 26009.4,
   "sixMonthLow": 22182.55,
   "threeMonthHigh": 24774.3,
@@ -3960,6 +3960,14 @@
       "high": 24630.4,
       "low": 24522.75,
       "close": 24570.65,
+      "volume": 0
+    },
+    {
+      "date": "2026-08-10",
+      "open": 24581.25,
+      "high": 24620.95,
+      "low": 24511.1,
+      "close": 24583.8,
       "volume": 0
     }
   ]

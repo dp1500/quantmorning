@@ -1,15 +1,8 @@
 {
-  "lastUpdated": "2026-08-10T08:41:06+05:30",
+  "lastUpdated": "2026-08-11T10:24:57+05:30",
   "model": "SSM Kalman + GARCH(2,1)",
   "modelDesc": "Local-level Kalman filter (150d) with AR(1) drift + GJR-GARCH residuals; GARCH(2,1) on Student-t for comparison",
   "last5Days": [
-    {
-      "date": "2026-08-03",
-      "actual": 24774.3,
-      "forecast": null,
-      "lowerCI": null,
-      "upperCI": null
-    },
     {
       "date": "2026-08-04",
       "actual": 24614.9,
@@ -37,260 +30,260 @@
       "forecast": null,
       "lowerCI": null,
       "upperCI": null
+    },
+    {
+      "date": "2026-08-10",
+      "actual": 24583.8,
+      "forecast": null,
+      "lowerCI": null,
+      "upperCI": null
     }
   ],
   "forecast5Days": [
     {
-      "date": "2026-08-10",
-      "actual": null,
-      "ssmMedian": 24563.0,
-      "ssmLower": 24392.0,
-      "ssmUpper": 24736.0,
-      "garchMedian": 24584.5,
-      "garchLower": 24420.4,
-      "garchUpper": 24749.8
-    },
-    {
       "date": "2026-08-11",
       "actual": null,
-      "ssmMedian": 24556.0,
-      "ssmLower": 24313.0,
-      "ssmUpper": 24802.0,
-      "garchMedian": 24598.4,
-      "garchLower": 24366.5,
-      "garchUpper": 24832.5
+      "ssmMedian": 24577.0,
+      "ssmLower": 24411.0,
+      "ssmUpper": 24743.0,
+      "garchMedian": 24600.0,
+      "garchLower": 24439.8,
+      "garchUpper": 24761.1
     },
     {
       "date": "2026-08-12",
       "actual": null,
-      "ssmMedian": 24549.0,
-      "ssmLower": 24249.0,
-      "ssmUpper": 24853.0,
-      "garchMedian": 24612.3,
-      "garchLower": 24328.5,
-      "garchUpper": 24899.4
+      "ssmMedian": 24570.0,
+      "ssmLower": 24334.0,
+      "ssmUpper": 24807.0,
+      "garchMedian": 24616.1,
+      "garchLower": 24390.0,
+      "garchUpper": 24844.4
     },
     {
       "date": "2026-08-13",
       "actual": null,
-      "ssmMedian": 24542.0,
-      "ssmLower": 24193.0,
-      "ssmUpper": 24896.0,
-      "garchMedian": 24626.2,
-      "garchLower": 24298.7,
-      "garchUpper": 24958.0
+      "ssmMedian": 24562.0,
+      "ssmLower": 24272.0,
+      "ssmUpper": 24857.0,
+      "garchMedian": 24632.3,
+      "garchLower": 24355.6,
+      "garchUpper": 24912.2
     },
     {
       "date": "2026-08-14",
       "actual": null,
-      "ssmMedian": 24535.0,
-      "ssmLower": 24142.0,
-      "ssmUpper": 24934.0,
-      "garchMedian": 24640.1,
-      "garchLower": 24274.1,
-      "garchUpper": 25011.5
+      "ssmMedian": 24555.0,
+      "ssmLower": 24217.0,
+      "ssmUpper": 24898.0,
+      "garchMedian": 24648.5,
+      "garchLower": 24329.2,
+      "garchUpper": 24972.0
+    },
+    {
+      "date": "2026-08-17",
+      "actual": null,
+      "ssmMedian": 24548.0,
+      "ssmLower": 24168.0,
+      "ssmUpper": 24935.0,
+      "garchMedian": 24664.7,
+      "garchLower": 24308.0,
+      "garchUpper": 25026.6
     }
   ],
   "ssmAnnualVol": 0.1,
-  "garchAnnualVol": 0.2,
+  "garchAnnualVol": 0.1,
   "oiLevels": {
-    "expiryDate": "2026-08-11",
-    "daysLeft": 0,
-    "maxPain": 24600,
-    "pcr": 0.76,
+    "expiryDate": "2026-08-18",
+    "daysLeft": 6,
+    "maxPain": 24000,
+    "pcr": 1.08,
     "strikes": [
       {
         "strike": 23950,
-        "callOI": 27820,
-        "putOI": 1488760,
-        "callChange": -65,
-        "putChange": 79560
+        "callOI": 3705,
+        "putOI": 607360,
+        "callChange": 0,
+        "putChange": -9555
       },
       {
         "strike": 24000,
-        "callOI": 650520,
-        "putOI": 10350795,
-        "callChange": -2145,
-        "putChange": -162760
+        "callOI": 264160,
+        "putOI": 4511520,
+        "callChange": 195,
+        "putChange": 67470
       },
       {
         "strike": 24050,
-        "callOI": 44525,
-        "putOI": 1926600,
-        "callChange": 0,
-        "putChange": -15275
+        "callOI": 14690,
+        "putOI": 386555,
+        "callChange": 1755,
+        "putChange": 12805
       },
       {
         "strike": 24100,
-        "callOI": 343330,
-        "putOI": 4782765,
-        "callChange": 910,
-        "putChange": -24115
+        "callOI": 150670,
+        "putOI": 1380730,
+        "callChange": -130,
+        "putChange": 54600
       },
       {
         "strike": 24150,
-        "callOI": 53040,
-        "putOI": 2560155,
-        "callChange": 0,
-        "putChange": 120835
+        "callOI": 13130,
+        "putOI": 361465,
+        "callChange": -650,
+        "putChange": -10205
       },
       {
         "strike": 24200,
-        "callOI": 954395,
-        "putOI": 6513455,
-        "callChange": 130,
-        "putChange": -159640
+        "callOI": 277875,
+        "putOI": 1846000,
+        "callChange": 325,
+        "putChange": 2990
       },
       {
         "strike": 24250,
-        "callOI": 130195,
-        "putOI": 2561845,
-        "callChange": -6825,
-        "putChange": -143195
+        "callOI": 38350,
+        "putOI": 628095,
+        "callChange": -195,
+        "putChange": 27820
       },
       {
         "strike": 24300,
-        "callOI": 858845,
-        "putOI": 6186505,
-        "callChange": -975,
-        "putChange": 91000
+        "callOI": 388115,
+        "putOI": 2037425,
+        "callChange": -1040,
+        "putChange": 56875
       },
       {
         "strike": 24350,
-        "callOI": 358540,
-        "putOI": 2236065,
-        "callChange": 17485,
-        "putChange": -105235
+        "callOI": 56680,
+        "putOI": 596505,
+        "callChange": 0,
+        "putChange": -1820
       },
       {
         "strike": 24400,
-        "callOI": 1353430,
-        "putOI": 5546710,
-        "callChange": -22230,
-        "putChange": -305110
+        "callOI": 574470,
+        "putOI": 1226485,
+        "callChange": -1885,
+        "putChange": 10725
       },
       {
         "strike": 24450,
-        "callOI": 531050,
-        "putOI": 2406950,
-        "callChange": -94445,
-        "putChange": -448760
+        "callOI": 100360,
+        "putOI": 463060,
+        "callChange": -910,
+        "putChange": -3640
       },
       {
         "strike": 24500,
-        "callOI": 3932175,
-        "putOI": 7437300,
-        "callChange": -590330,
-        "putChange": -1107990
+        "callOI": 1148810,
+        "putOI": 1857245,
+        "callChange": -1300,
+        "putChange": -33345
       },
       {
         "strike": 24550,
-        "callOI": 3871205,
-        "putOI": 3528980,
-        "callChange": -413855,
-        "putChange": -1091740
+        "callOI": 463905,
+        "putOI": 559845,
+        "callChange": -25675,
+        "putChange": -15860
       },
       {
         "strike": 24600,
-        "callOI": 12354030,
-        "putOI": 7978035,
-        "callChange": -1151735,
-        "putChange": -1036360
+        "callOI": 2329405,
+        "putOI": 2284880,
+        "callChange": 4875,
+        "putChange": -11635
       },
       {
         "strike": 24650,
-        "callOI": 6157385,
-        "putOI": 1993680,
-        "callChange": -844740,
-        "putChange": -219700
+        "callOI": 855855,
+        "putOI": 456105,
+        "callChange": 65390,
+        "putChange": -7605
       },
       {
         "strike": 24700,
-        "callOI": 10355930,
-        "putOI": 2421380,
-        "callChange": -984360,
-        "putChange": -224965
+        "callOI": 2205385,
+        "putOI": 1017250,
+        "callChange": 11050,
+        "putChange": 2145
       },
       {
         "strike": 24750,
-        "callOI": 4109950,
-        "putOI": 432965,
-        "callChange": -266370,
-        "putChange": -27885
+        "callOI": 686335,
+        "putOI": 155350,
+        "callChange": -15990,
+        "putChange": -2990
       },
       {
         "strike": 24800,
-        "callOI": 9555520,
-        "putOI": 993460,
-        "callChange": -479765,
-        "putChange": -9880
+        "callOI": 2083120,
+        "putOI": 363285,
+        "callChange": -10335,
+        "putChange": -4550
       },
       {
         "strike": 24850,
-        "callOI": 3243045,
-        "putOI": 218660,
-        "callChange": -86515,
-        "putChange": -5200
+        "callOI": 390780,
+        "putOI": 26390,
+        "callChange": -3380,
+        "putChange": -195
       },
       {
         "strike": 24900,
-        "callOI": 7710235,
-        "putOI": 327145,
-        "callChange": -66170,
-        "putChange": -4095
+        "callOI": 1318590,
+        "putOI": 397345,
+        "callChange": 52780,
+        "putChange": -780
       },
       {
         "strike": 24950,
-        "callOI": 3437330,
-        "putOI": 66040,
-        "callChange": -60580,
-        "putChange": -1755
+        "callOI": 391040,
+        "putOI": 17225,
+        "callChange": 13260,
+        "putChange": 0
       },
       {
         "strike": 25000,
-        "callOI": 11582155,
-        "putOI": 622440,
-        "callChange": 3965,
-        "putChange": -10465
+        "callOI": 3600545,
+        "putOI": 369980,
+        "callChange": 23920,
+        "putChange": 1820
       },
       {
         "strike": 25050,
-        "callOI": 3705845,
-        "putOI": 45305,
-        "callChange": 95160,
-        "putChange": 260
+        "callOI": 507910,
+        "putOI": 3965,
+        "callChange": -5915,
+        "putChange": -195
       },
       {
         "strike": 25100,
-        "callOI": 7846540,
-        "putOI": 74360,
-        "callChange": -19045,
-        "putChange": -260
+        "callOI": 1466465,
+        "putOI": 62335,
+        "callChange": 25740,
+        "putChange": 455
       },
       {
         "strike": 25150,
-        "callOI": 2698020,
-        "putOI": 20735,
-        "callChange": 99840,
-        "putChange": -195
+        "callOI": 623740,
+        "putOI": 2275,
+        "callChange": -4095,
+        "putChange": 0
       }
     ]
   },
   "rangeModel": {
-    "forecastDate": "2026-07-31",
-    "forecastPrice": 24383.6,
-    "d5Date": "2026-08-07",
-    "d5Upper": 24754.0,
-    "d5Lower": 24122.0,
-    "d5Median": 24436.0,
+    "forecastDate": "2026-08-03",
+    "forecastPrice": 24774.3,
+    "d5Date": "2026-08-10",
+    "d5Upper": 25212.0,
+    "d5Lower": 24483.0,
+    "d5Median": 24845.0,
     "actualDays": [
-      {
-        "date": "2026-08-03",
-        "open": 24572.7,
-        "high": 24774.3,
-        "low": 24515.15,
-        "close": 24774.3
-      },
       {
         "date": "2026-08-04",
         "open": 24703.9,
@@ -318,8 +311,15 @@
         "high": 24630.4,
         "low": 24522.75,
         "close": 24570.65
+      },
+      {
+        "date": "2026-08-10",
+        "open": 24581.25,
+        "high": 24620.95,
+        "low": 24511.1,
+        "close": 24583.8
       }
     ],
-    "signal": "overbought"
+    "signal": "oversold"
   }
 }
